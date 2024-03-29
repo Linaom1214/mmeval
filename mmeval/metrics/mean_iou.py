@@ -41,7 +41,7 @@ class MeanIoU(BaseMetric):
     Args:
         num_classes (int, optional): The number of classes. If None, it will be
             obtained from the 'num_classes' or 'classes' field in
-            `self.dataset_meta`. Defaults to None.
+            `self.dataset_meta`. Defaults to None. For a binary segmentation task, 'num_classes' should be set to 2.
         ignore_index (int, optional): Index that will be ignored in evaluation.
             Defaults to 255.
         nan_to_num (int, optional): If specified, NaN values will be replaced
